@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>R&t DEVELLOPEMENT</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titre">Bonsoir et bienvenue sur le site de R&T DEVELLOPEMENT</h1>
+        <h2>Nous sommes le {{ date |date:"d F Y" }}</h2>
+        <h3>Il est actuellement {{ date |date:"H:i" }}</h3>
+        <a href="machines/">Acceder a la page</a>
+    </div>
+</body>
+</html>
